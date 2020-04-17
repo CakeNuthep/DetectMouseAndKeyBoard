@@ -99,6 +99,39 @@ namespace WindowsFormsApp1
                 KeysConverter kc = new KeysConverter();
 
                 string letter = kc.ConvertToString(e.Key);
+                if(e.Key == Keys.Add || e.Key == Keys.Oemplus)
+                {
+                    letter = "Plus";
+                }
+                else if(e.Key == Keys.Subtract || e.Key == Keys.OemMinus)
+                {
+                    letter = "Suntract";
+                }
+                else if(e.Key == Keys.OemQuestion)
+                {
+                    letter = "Question";
+                }
+                else if(e.Key == Keys.OemSemicolon)
+                {
+                    letter = "Semicolon";
+                }
+                else if(e.Key == Keys.OemQuotes)
+                {
+                    letter = "Quotes";
+                }
+                else if(e.Key == Keys.OemPeriod)
+                {
+                    letter = "Dot";
+                }
+                else if(e.Key == Keys.Oemcomma)
+                {
+                    letter = "Comma";
+                }
+                else if(e.Key == Keys.Oem5)
+                {
+                    letter = "Backslash";
+                }
+
                 if (count == 0)
                 {
                     message += $"{letter}";
@@ -107,6 +140,8 @@ namespace WindowsFormsApp1
                 {
                     message += $" + {letter}";
                 }
+
+
                 count++;
             }
             showKeyboard(message);

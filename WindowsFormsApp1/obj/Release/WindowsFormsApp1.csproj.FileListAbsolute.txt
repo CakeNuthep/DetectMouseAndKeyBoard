@@ -10,3 +10,15 @@ D:\Freeland\WindowsFormsApp1\WindowsFormsApp1\obj\Release\WindowsFormsApp1.cspro
 D:\Freeland\WindowsFormsApp1\WindowsFormsApp1\obj\Release\WindowsFormsApp1.csproj.CopyComplete
 D:\Freeland\WindowsFormsApp1\WindowsFormsApp1\obj\Release\WindowsFormsApp1.exe
 D:\Freeland\WindowsFormsApp1\WindowsFormsApp1\obj\Release\WindowsFormsApp1.pdb
+D:\Freeland\DetectMouseAndKeyboard\WindowsFormsApp1\bin\Release\WindowsFormsApp1.exe.config
+D:\Freeland\DetectMouseAndKeyboard\WindowsFormsApp1\bin\Release\WindowsFormsApp1.exe
+D:\Freeland\DetectMouseAndKeyboard\WindowsFormsApp1\bin\Release\WindowsFormsApp1.pdb
+D:\Freeland\DetectMouseAndKeyboard\WindowsFormsApp1\bin\Release\Gma.System.MouseKeyHook.dll
+D:\Freeland\DetectMouseAndKeyboard\WindowsFormsApp1\obj\Release\WindowsFormsApp1.Form1.resources
+D:\Freeland\DetectMouseAndKeyboard\WindowsFormsApp1\obj\Release\WindowsFormsApp1.Form_detect.resources
+D:\Freeland\DetectMouseAndKeyboard\WindowsFormsApp1\obj\Release\WindowsFormsApp1.Properties.Resources.resources
+D:\Freeland\DetectMouseAndKeyboard\WindowsFormsApp1\obj\Release\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\Freeland\DetectMouseAndKeyboard\WindowsFormsApp1\obj\Release\WindowsFormsApp1.csproj.CopyComplete
+D:\Freeland\DetectMouseAndKeyboard\WindowsFormsApp1\obj\Release\WindowsFormsApp1.exe
+D:\Freeland\DetectMouseAndKeyboard\WindowsFormsApp1\obj\Release\WindowsFormsApp1.pdb
+D:\Freeland\DetectMouseAndKeyboard\WindowsFormsApp1\obj\Release\WindowsFormsApp1.csprojAssemblyReference.cache
