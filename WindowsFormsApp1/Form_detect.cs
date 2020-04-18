@@ -169,6 +169,12 @@ namespace WindowsFormsApp1
 
         }
 
+        public void setFont(Font font,Color color)
+        {
+            label_keyboard.Font = font;
+            label_keyboard.ForeColor = color;
+        }
+
         public void run()
         {
             timer_clear.Start();
@@ -238,9 +244,23 @@ namespace WindowsFormsApp1
             };
         }
 
+        #region set disable clos Button
+        private const int CP_NOCLOSE_BUTTON = 0x200;
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams myCp = base.CreateParams;
+                myCp.ClassStyle = myCp.ClassStyle | CP_NOCLOSE_BUTTON;
+                return myCp;
+            }
+        }
+        #endregion end set disable clos Button
+
         private void Form_detect_Load(object sender, EventArgs e)
         {
-            
+            ControlExtension.Draggable(label_keyboard, true);
+            ControlExtension.Draggable(pictureBox_mouse, true);
         }
 
         private void timer_clear_Tick(object sender, EventArgs e)

@@ -21,4 +21,4 @@ D:\Freeland\DetectMouseAndKeyboard\WindowsFormsApp1\obj\Release\WindowsFormsApp1
 D:\Freeland\DetectMouseAndKeyboard\WindowsFormsApp1\obj\Release\WindowsFormsApp1.csproj.CopyComplete
 D:\Freeland\DetectMouseAndKeyboard\WindowsFormsApp1\obj\Release\WindowsFormsApp1.exe
 D:\Freeland\DetectMouseAndKeyboard\WindowsFormsApp1\obj\Release\WindowsFormsApp1.pdb
-D:\Freeland\DetectMouseAndKeyboard\WindowsFormsApp1\obj\Release\WindowsFormsApp1.csprojAssemblyReference.cache
+D:\Freeland\DetectMouseAndKeyboard\WindowsFormsApp1\bin\Release\Control.Draggable.dll

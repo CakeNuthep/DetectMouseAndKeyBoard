@@ -101,5 +101,17 @@ namespace WindowsFormsApp1
                 detectForm.Opacity = opacity/(trackBar_opacity.Maximum)*1.0;
             }
         }
+
+        private void button_fontSetting_Click(object sender, EventArgs e)
+        {
+            fontDialog1.ShowColor = true;
+            fontDialog1.ShowDialog();
+            label_fontSample.Font = fontDialog1.Font;
+            label_fontSample.ForeColor = fontDialog1.Color;
+
+            detectForm.setFont(fontDialog1.Font, fontDialog1.Color);
+
+
+        }
     }
 }

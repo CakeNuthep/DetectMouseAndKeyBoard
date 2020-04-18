@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.label_keyboard = new System.Windows.Forms.Label();
-            this.pictureBox_mouse = new System.Windows.Forms.PictureBox();
             this.timer_clear = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox_mouse = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_mouse)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,28 +45,28 @@
             this.label_keyboard.TabIndex = 0;
             this.label_keyboard.Text = "Ctrl + Shift + F12";
             // 
+            // timer_clear
+            // 
+            this.timer_clear.Interval = 300;
+            this.timer_clear.Tick += new System.EventHandler(this.timer_clear_Tick);
+            // 
             // pictureBox_mouse
             // 
             this.pictureBox_mouse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox_mouse.Image = global::WindowsFormsApp1.Properties.Resources.mouse_left_click;
-            this.pictureBox_mouse.Location = new System.Drawing.Point(282, 12);
+            this.pictureBox_mouse.Location = new System.Drawing.Point(354, 12);
             this.pictureBox_mouse.Name = "pictureBox_mouse";
             this.pictureBox_mouse.Size = new System.Drawing.Size(104, 99);
             this.pictureBox_mouse.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox_mouse.TabIndex = 1;
             this.pictureBox_mouse.TabStop = false;
             // 
-            // timer_clear
-            // 
-            this.timer_clear.Interval = 300;
-            this.timer_clear.Tick += new System.EventHandler(this.timer_clear_Tick);
-            // 
             // Form_detect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(413, 137);
+            this.ClientSize = new System.Drawing.Size(486, 137);
             this.Controls.Add(this.pictureBox_mouse);
             this.Controls.Add(this.label_keyboard);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
