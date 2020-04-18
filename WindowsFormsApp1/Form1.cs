@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -13,6 +14,7 @@ namespace WindowsFormsApp1
     public partial class Form1 : Form
     {
         Form_detect detectForm;
+        string textSample;
         bool isRun;
         public Form1()
         {
@@ -22,6 +24,8 @@ namespace WindowsFormsApp1
             
             detectForm.Show();
             detectForm.Visible = false;
+            textSample = ConfigurationManager.AppSettings["TEXT_EXAMPLE"];
+            label_fontSample.Text = textSample;
         }
 
         private void button_run_Click(object sender, EventArgs e)
@@ -36,7 +40,7 @@ namespace WindowsFormsApp1
                 //detectForm.insertHotKey(new List<Keys> { Keys.ControlKey, Keys.ShiftKey }, "Ctrl+Shift");
                 //detectForm.insertHotKey(new List<Keys> { Keys.ControlKey }, "Ctrl");
                 detectForm.run();
-                
+                detectForm.setDraggable(false);
                 button_run.Text = "STOP";
             }
             else
@@ -45,6 +49,8 @@ namespace WindowsFormsApp1
                 if(detectForm != null)
                 {
                     detectForm.FormBorderStyle = FormBorderStyle.Sizable;
+                    detectForm.setDraggable(true);
+                    detectForm.setShowTextKeyboardDefault();
                     detectForm.Visible = false;
                 }
                 checkBox_preview.Checked = false;

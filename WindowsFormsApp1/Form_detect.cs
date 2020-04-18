@@ -147,6 +147,12 @@ namespace WindowsFormsApp1
             showKeyboard(message);
         }
 
+        public void setShowTextKeyboardDefault()
+        {
+            string textSample = ConfigurationManager.AppSettings["TEXT_EXAMPLE"];
+            label_keyboard.Text = textSample;
+        }
+
     
 
         public Form_detect(bool isRun)
@@ -259,8 +265,13 @@ namespace WindowsFormsApp1
 
         private void Form_detect_Load(object sender, EventArgs e)
         {
-            ControlExtension.Draggable(label_keyboard, true);
-            ControlExtension.Draggable(pictureBox_mouse, true);
+            
+        }
+
+        public void setDraggable(bool enable)
+        {
+            ControlExtension.Draggable(label_keyboard, enable);
+            ControlExtension.Draggable(pictureBox_mouse, enable);
         }
 
         private void timer_clear_Tick(object sender, EventArgs e)
